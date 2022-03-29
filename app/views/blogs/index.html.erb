@@ -5,7 +5,7 @@
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
                     <h1>Clean Blog</h1>
-                    <span class="subheading">A Blog Theme by ujkz class</span>
+                    <span class="subheading">Un thème de blog par la classe ujkz</span>
                 </div>
             </div>
         </div>
@@ -23,13 +23,13 @@
                 <h2 class="post-title"><%= blog.title %></h2>
                 <h3 class="post-subtitle"><%= blog.description %></h3>
               <% end %>
-              <p class="post-meta">Posted by
+              <p class="post-meta">Publié par
                 <a href="#">ujkz class</a>
-                on march <%= time_ago_in_words(blog.created_at) %>
+                en mars <%= time_ago_in_words(blog.created_at) %>
               </p>
               <p class="post-meta">
-              <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-              <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Modifier', edit_blog_path(blog) %></td>
+              <td><%= link_to 'supprimer', blog, method: :delete, data: { confirm: 'Etes-vous sûr ?' } %></td>
               </p>
             </div>
             <!-- Divider-->
